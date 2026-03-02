@@ -1,6 +1,42 @@
 # To do List
 
-Este projeto contém uma lista de tarefas estática feita com Vue 3, seguindo as boas práticas do curso **Vue.js 3 Fundamentals with the Composition API** da Vue School.
+Este projeto contém uma lista de tarefas estática feita com Vue 3, seguindo as boas práticas dos cursos:
+- Vue.js 3 [Fundamentals with the Composition API** da Vue School](https://vueschool.io/courses/vue-js-fundamentals-with-the-composition-api);
+- Vue.js 3 [Component Fundamentals with the Composition API** da Vue School](https://vueschool.io/courses/vue-component-fundamentals-with-the-composition-api);
+
+Além da [documentação oficial do Vue 3](https://vuejs.org/guide/introduction.html).
+
+## Conceitos aplicados
+
+Durante o desenvolvimento deste projeto, trabalhei com:
+
+### Reatividade
+- Diferença entre `ref` e `reactive`
+- Derivação de estado com `computed`
+- Efeitos colaterais com `watch`
+
+### Ciclo de Vida
+- Uso do `onMounted` para recuperação de dados persistidos
+
+### Gerenciamento de Estado
+- Persistência de dados com `LocalStorage`
+- Observação profunda (`deep watch`) para sincronização automática
+
+### Manipulação de Dados
+- Criação, remoção e marcação de itens
+- Filtragem dinâmica via propriedades computadas
+- Controle de exibição condicional (dark mode)
+
+### Interação com o Usuário
+- Eventos (`v-on`)
+- Two-way binding (`v-model`)
+- Validação de formulário
+
+## Decisões Técnicas
+
+- Utilização de `computed` para filtragem ao invés de mutação direta do estado dos itens.
+- Uso de `watch` apenas para efeitos colaterais (persistência).
+- Manutenção de uma única fonte de verdade para os dados (`items`).
 
 ## Configuração Recomendada da IDE
 
