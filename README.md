@@ -32,6 +32,12 @@ Durante o desenvolvimento deste projeto, trabalhei com:
 - Two-way binding (`v-model`)
 - Validação de formulário
 
+### Componentes
+- Criação de componentes locais e globais
+- Utilização de componentes
+- Comunicação entre componentes com eventos customizados
+- Props e emits
+
 ## Decisões Técnicas
 
 - Utilização de `computed` para filtragem ao invés de mutação direta do estado dos itens.
