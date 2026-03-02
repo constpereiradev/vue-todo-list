@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 
 const header = ref('Lista de tarefas')
 
@@ -7,6 +7,13 @@ const items = ref([])
 const newItem = ref('')
 const highPriority = ref(false)
 const newItemLimit = ref(200)
+
+onMounted(() => {
+  var localStorageItems = localStorage.getItem('items')
+  if(localStorageItems){
+    items.value = JSON.parse(localStorageItems)
+  }
+})
 
 const addItem = () => {
 
@@ -28,6 +35,8 @@ const addItem = () => {
     name: newItem.value,
     highPriority: highPriority.value
   })
+
+  localStorage.setItem('items', JSON.stringify(items.value))
 }
 
 const mark = (item) => {
