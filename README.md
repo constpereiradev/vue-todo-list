@@ -1,61 +1,80 @@
-# todo-list
+# To do List
 
-This template should help get you started developing with Vue 3 in Vite.
+Este projeto contém uma lista de tarefas estática feita com Vue 3, seguindo as boas práticas do curso **Vue.js 3 Fundamentals with the Composition API** da Vue School.
 
-## Recommended IDE Setup
+## Configuração Recomendada da IDE
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (desabilite o Vetur).
 
-## Recommended Browser Setup
+## Configuração Recomendada do Navegador
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+### Navegadores baseados em Chromium (Chrome, Edge, Brave, etc.)
 
-## Customize configuration
+- Vue.js Devtools  
+- Ativar **Custom Object Formatter** no Chrome DevTools  
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### Firefox
 
-## Project Setup
+- Vue.js Devtools  
+- Ativar **Custom Object Formatter** no Firefox DevTools  
+
+## Personalizar Configuração
+
+Veja a documentação:  
+[Vite Configuration Reference](https://vite.dev/config/)
+
+## Instalação do Projeto
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Compilar e Executar em Desenvolvimento (Hot-Reload)
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Compilar e Minificar para Produção
 
 ```sh
 npm run build
 ```
 
-### Run End-to-End Tests with [Nightwatch](https://nightwatchjs.org/)
+### Executar Testes End-to-End com [Nightwatch](https://nightwatchjs.org/)
 
 ```sh
-# When using CI, the project must be built first.
+# Ao utilizar CI, o projeto deve ser buildado primeiro
 npm run build
 
-# Runs the end-to-end tests
+# Executa os testes end-to-end
 npm run test:e2e
 # Runs the tests only on Chrome
-npm run test:e2e -- --env chrome
-# Runs the tests of a specific file
+# Executa os testes apenas no Chrome
+# Executa os testes de um arquivo específico
 npm run test:e2e -- tests/e2e/example.js
-# Runs the tests in debug mode
+# Executa os testes em modo debug
 npm run test:e2e -- --debug
 ```
     
-### Run Headed Component Tests with [Nightwatch Component Testing](https://nightwatchjs.org/guide/component-testing/introduction.html)
+### Executar Testes de Componentes com [Nightwatch Component Testing](https://nightwatchjs.org/guide/component-testing/introduction.html)
   
 ```sh
 npm run test:unit
 npm run test:unit -- --headless # for headless testing
 ```
+
+---
+
+## Sobre a Autora
+
+Amanda da Conceição Pereira  
+Desenvolvedora Backend  
+
+Email: amandapereiradevcontact@gmail.com  
+LinkedIn: https://linkedin.com/in/amanda-pereira-dev  
+GitHub: https://github.com/constpereiradev  
+
+---
+
+Projeto desenvolvido para fins de estudo com Vue 3 e Composition API.
