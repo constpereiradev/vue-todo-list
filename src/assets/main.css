@@ -1,57 +1,70 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 20px;
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 .header {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
-h1 {
-  margin: 0;
+.header img {
+  margin-left: 10px;
+  cursor: pointer;
 }
 
+body {
+  background: #f5f5f5;
+}
+
+.todolist {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+/* FORM */
 form {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 input[type="text"] {
+  width: 50%;
   padding: 6px;
-  width: 250px;
-  margin-right: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
 }
 
-input[type="checkbox"] {
-  margin-left: 5px;
-  margin-right: 4px;
+label {
+  margin-right: 10px;
+  font-size: 14px;
 }
 
 button {
   padding: 6px 10px;
+  border: 1px solid #ccc;
+  background: #eee;
   cursor: pointer;
 }
 
 button:disabled {
+  opacity: 0.5;
   cursor: not-allowed;
-  opacity: 0.6;
 }
 
+/* LISTA */
 ul {
   list-style: none;
   padding: 0;
 }
 
 li {
-  background: white;
-  padding: 8px;
-  margin-bottom: 6px;
-  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 li p {
-  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,10 +72,21 @@ li p {
 
 .marked {
   text-decoration: line-through;
-  opacity: 0.6;
 }
 
 .priority {
-  color: orange;
   font-weight: bold;
+}
+
+/* DARK MODE */
+.todolist.darkMode {
+  background: #222;
+  color: white;
+}
+
+.todolist.darkMode input,
+.todolist.darkMode button {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
 }

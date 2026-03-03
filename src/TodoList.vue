@@ -100,11 +100,10 @@ const handleDarkMode = (darkModeValue) => {
       <button v-bind:disabled="newItem.length === 0 || newItem.length >= newItemLimit">Adicionar</button>
     </form>
 
-    Caracteres: {{ newItemCount }}/200 <br><br>
+    {{ newItemCount }}/200
+    <br>
     <p v-if="!markedItems.length">Nenhum item cadastrado</p>
     <p v-else>Clique no nome do item para riscar da lista</p>
-
-    <br><br>
 
     <ul>
       <li v-for="(item, index) in markedItems" :key=item.id>
